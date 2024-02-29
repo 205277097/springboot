@@ -10,5 +10,5 @@ public class WxCloudRunApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(WxCloudRunApplication.class, args);
-  }
+  } 
 }
