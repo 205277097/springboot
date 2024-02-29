@@ -82,7 +82,7 @@ public class CounterController {
   }
 
   //get请求后缀都是hello入口的都会返回hello word 如@GetMapping("say") 则要在后面加上/say
-  @RequestMapping(value = "/api/say")
+  @RequestMapping("/hello")
   @GetMapping(value = "/api/say")
   public String sayHello() {
     return "我爱猪宝(张拼)";
