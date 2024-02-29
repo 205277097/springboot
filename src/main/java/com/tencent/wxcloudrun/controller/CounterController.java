@@ -16,6 +16,7 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * counter控制器
  */
@@ -78,6 +79,13 @@ public class CounterController {
     } else {
       return ApiResponse.error("参数action错误");
     }
+  }
+
+  //get请求后缀都是hello入口的都会返回hello word 如@GetMapping("say") 则要在后面加上/say
+  @RequestMapping(value = "/api/say")
+  @GetMapping(value = "/api/say")
+  public String sayHello() {
+    return "hello word";
   }
   
 }
