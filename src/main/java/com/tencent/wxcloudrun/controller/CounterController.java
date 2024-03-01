@@ -85,7 +85,7 @@ public class CounterController {
   @RequestMapping("/api/say")
   @GetMapping(value = "/api/say")
   public String sayHello() {
-    return "我爱猪宝(张拼)";
+    return "hello word";
   }
   
 }
