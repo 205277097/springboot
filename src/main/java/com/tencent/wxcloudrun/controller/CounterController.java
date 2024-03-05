@@ -1,5 +1,6 @@
 package com.tencent.wxcloudrun.controller;
 
+import com.tencent.wxcloudrun.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.tencent.wxcloudrun.config.ApiResponse;
@@ -81,6 +82,8 @@ public class CounterController {
   @RequestMapping("/api/say")
   @GetMapping(value = "/api/say")
   public String sayHello() {
+//    User user = new User();
+//    user.getId();
     return "已点击";
   }
   
