@@ -1,0 +1,3 @@
+#这个文件作为复写
+server:
+  port: ${APPLACTION_PORT}

@@ -3,15 +3,23 @@ server:
 
 
 spring:
+  profiles:
+    active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:kai-music}
+    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE}
     username: ${MYSQL_USERNAME}
-    password: ${MySQL_PASSWORD}
+    password: ${MYSQL_PASSWORD}
   mvc:
     view:
       suffix: .html
       prefix: /
+  jpa:
+    generate-ddl: false
+  flyway:
+    enabled: true
+  config:
+    import: optional:file:.env[.properties]
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
