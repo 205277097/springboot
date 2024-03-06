@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
+import java.util.Date;
 
 //持久层
 @Entity
@@ -13,7 +14,6 @@ import javax.persistence.Id;
 public class User extends AbstractEntity{
 
 //    字段会自动映射到表里的对应字段，需要统一名称
-
 
     private String username;
 
@@ -30,7 +30,7 @@ public class User extends AbstractEntity{
 
     private String lastLoginIp;
 
-    private String lastLoginTime;
+    private Date lastLoginTime;
 
 
 }

@@ -17,7 +17,7 @@ public abstract class AbstractEntity  {
     @Id
     @GeneratedValue(generator = "Ksuid")
     @GenericGenerator(name="ksuid",strategy="com.tencent.wxcloudrun.wxcloudrun-spring.utils.KsuidIdentifierGenerator")
-    private String id;
+    private Long id;
 
     @CreationTimestamp
     private Date createdTime;
