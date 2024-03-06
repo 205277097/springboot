@@ -18,7 +18,7 @@ public class CounterController {
   public String sayHello() {
 //    User user = new User();
 //    user.getId();
-    return "已点击";
+    return "已点击.";
   }
   
 }
